@@ -195,42 +195,50 @@ button {
   max-height: 6em;
 }
 
-.projetos-items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, auto);
-  gap: 3em;
-  padding: 20px;
+#aprendizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.projetos-items div {
-  border: 1px solid black;
-  min-height: 16rem;
-  max-height: 20rem;
-  min-width: 26rem;
-  border-radius: 16px;
-  padding: 10px;
+#aprendizado .cards-aprendizado {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-#projetos-items-iptracker {
-  background-image: url("./assets/images/iptracker-print.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#aprendizado .card {
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
-#projetos-items-secretword {
-  background-image: url("./assets/images/secretword-print.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#aprendizado .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
 }
 
-.projetos-items img {
-  max-width: 30em;
-  min-width: 30em;
-  min-height: 20em;
-  max-height: 20em;
+#aprendizado .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#aprendizado .btn {
+  margin-top: 10px;
+}
+
+#aprendizado .comentarios {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#aprendizado .comentarios .form-group input {
+  background-color: var(--main-bg-color);
 }
 
 .form-label,
@@ -249,9 +257,30 @@ button {
 #feedback {
   padding: 6em;
 }
+.card {
+  background-color: var(--navbar-bg-color);
+}
 
+.card-body {
+  color: #fff;
+}
 #feedback .titulo-section {
   margin-top: 0;
+}
+
+#galeria-de-fotos {
+  border-radius: 16px;
+  background-color: var(--navbar-bg-color);
+  padding: 2em;
+  width: 80vw;
+  max-height: 80vh;
+  margin-bottom: 100px;
+}
+
+#galeria-de-fotos img {
+  border-radius: 16px;
+  max-width: 100vw;
+  max-height: 70vh;
 }
 
 #contato {
